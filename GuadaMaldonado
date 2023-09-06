@@ -1,0 +1,22 @@
+def paciente():
+    apellido_nombre = input("Ingrese apellido y nombre del paciente:")
+    fecha_nacimiento = input("Ingrese fecha de nacimiento del paciente (DD/MM/YYYY):")
+    datos_clinica = input("Direccion de la clinica:")
+    turno = input('ingrese el proximo turno: ')
+    escribir = 'nombre:', apellido_nombre, 'fecha_nacimiento:', fecha_nacimiento, 'clinica:', datos_clinica, ' proximo_turno:', turno
+    return escribir
+
+
+def medicamentos():
+    nombre_medicamento = input("Ingrese el/los medicamentos a recetar:")
+    dosis = input("Ingrese la dosis necesaria para el paciente:")
+    indicaciones_medicamento = input("Ingrese detalladamente las indicaciones para el uso del medicamento:")
+    escribir = 'medicamento:', nombre_medicamento, 'dosis:', dosis, 'indicaciones:', indicaciones_medicamento
+    return escribir
+
+
+paciente_datos = paciente()
+medicamentos_datos = medicamentos()
+
+print(paciente_datos)
+print(medicamentos_datos)
